@@ -1,8 +1,5 @@
 # X-ray-Image-Denoising-for-Baggage-Screening
 This code is Poisson-Gaussian Denoising for security X-ray images. This is adopted from [Self-Supervised Poisson-Gaussian Denoising](https://arxiv.org/abs/2002.09558#:~:text=Self%2Dsupervised%20models%20for%20denoising,such%20as%20low%2Dlight%20microscopy.) 
-## References
-<a id="1">[1]</a> 
-Khademi, Wesley & Rao, Sonia & Minnerath, Clare & Hagen, Guy & Ventura, Jonathan. (2021). Self-Supervised Poisson-Gaussian Denoising. 2130-2138. 10.1109/WACV48630.2021.00218. 
 
 # ABSTRACT
 The utilization of dual-energy X-ray detection technology in security inspection plays a crucial role in ensuring public safety and preventing crimes. However, the X-ray images generated in such security checks often suffer from substantial noise, degrading the image quality and hindering accurate judgments by security inspectors. Existing deep learning-based denoising methods have limitations, such as reliance on large training datasets and clean reference images, which are not readily available in security inspection scenarios. In this work, we addressed the denoising problem of X-ray images with a Poisson-Gaussian noise model, without requiring clean reference images for training.
@@ -22,4 +19,10 @@ Environment used to run this code is mentioned in ```environment.yml```
 - tqdm=4.64.1
 
 # Training 
-python train_fmd.py --path ./dataset --dataset 'name-of-dataset' --mode uncalib
+python train_fmd.py --path ./dataset --dataset raw --mode uncalib
+# Testing
+python test1.py --path ./dataset --dataset raw --mode uncalib
+
+## References
+<a id="1">[1]</a> 
+Khademi, Wesley & Rao, Sonia & Minnerath, Clare & Hagen, Guy & Ventura, Jonathan. (2021). Self-Supervised Poisson-Gaussian Denoising. 2130-2138. 10.1109/WACV48630.2021.00218. 
