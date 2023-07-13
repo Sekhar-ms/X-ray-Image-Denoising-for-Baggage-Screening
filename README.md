@@ -19,9 +19,14 @@ Environment used to run this code is mentioned in ```environment.yml```
 - tqdm=4.64.1
 
 # Training 
-python train_fmd.py --path ./dataset --dataset raw --mode uncalib
+python train_fmd.py --path ./dataset --dataset non_fmd --mode uncalib
 # Testing
-python test1.py --path ./dataset --dataset raw --mode uncalib
+python test1.py --path ./dataset --dataset non_fmd --mode uncalib
+
+# About Dataset
+- Create 20 folders with names as 1 to 20. According to this code 1 to 19 folders are used in training and 20th folders is used for testing.
+- During training and testing network takes only images of size 512 \times 512
+
 
 ## References
 <a id="1">[1]</a> 
