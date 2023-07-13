@@ -6,10 +6,10 @@ The utilization of dual-energy X-ray detection technology in security inspection
 
 To overcome these challenges, we employed the Blindspot neural network, which effectively removes noise from X-ray images. Additionally, we incorporated image fusion algorithms, leveraging image spatial information and wavelet-based fusion rules to enhance visualization. Experimental evaluations on a real X-ray image dataset demonstrated the effectiveness of our approach, achieving favorable BRISQUE scores across different baggage scenes. The denoised images obtained through our method, combined with image fusion, enable security inspectors to make more accurate judgments and enhance public safety in security inspection settings.
 
-We implemented this code 16-bit grayscale X-ray images.
+We implemented this code for 16-bit grayscale X-ray images.
 
 # Environment
-Environment used to run this code is mentioned in ```environment.yml```
+The environment used to run this code is mentioned in ```environment.yml```
 
 # Dependencies
 - Python 3   
@@ -25,10 +25,10 @@ python train_fmd.py --path ./dataset --dataset non_fmd --mode uncalib
 python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
 # About dataset and data pre-processing
-- Create 20 folders with names as 1 to 20. According to this code 1 to 19 folders are used in training and 20th folders is used for testing.
+- Create 20 folders with names 1 to 20. According to this code, 1 to 19 folders are used in training, and 20th folders are used for testing.
 - During training and testing network takes only images of size 512 x 512.
-- If your images are not of that shape you need to mirror pad your images. For our experiment we mirror padded our images to 1024 x 1024 and did split each image into four 512 x 512 images.
-- After denoising those splits you can mearge those splits and crop out the mirror padded part.
+- If your images are not of that shape you need to mirror pad your images. For our experiment, we mirror-padded our images to 1024 x 1024 and split each image into four 512 x 512 images.
+- After denoising those splits you can merge those splits and crop out the mirror padded part.
 - Code for mirror padding and splitting is given in ```padding_splitting.ipynb```
 - Code for merging the denoised images and cropping the mirror padded part is given in ```merge_crop.ipynb```
 
