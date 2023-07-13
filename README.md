@@ -18,4 +18,4 @@ Environment used to run this code is mentioned in ```environment.yml```
 - tqdm=4.64.1
 
 # Training 
-python train_fmd.py --path ./dataset --dataset Confocal_MICE --mode uncalib
+python train_fmd.py --path ./dataset --dataset <name-of-dataset> --mode uncalib
