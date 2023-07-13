@@ -8,4 +8,4 @@ To overcome these challenges, we employed the Blindspot neural network, which ef
 We implemented this code 16-bit grayscale X-ray images.
 
 # Dependencies
-All python dependencies are included in environment.yml
+Environment used to run this code is mentioned in environment.yml
