@@ -7,5 +7,12 @@ To overcome these challenges, we employed the Blindspot neural network, which ef
 
 We implemented this code 16-bit grayscale X-ray images.
 
-# Dependencies
+# Environment
 Environment used to run this code is mentioned in environment.yml
+
+# Dependencies
+Python 3\\
+tensorflow=2.9.1\\ 
+tensorflow-gpu=2.5.0\\ 
+opencv-python=4.6.0.66\\ 
+tqdm=4.64.1\\ 
