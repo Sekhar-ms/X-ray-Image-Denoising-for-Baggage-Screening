@@ -37,5 +37,5 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 <a id="1">[1]</a> 
 Khademi, Wesley & Rao, Sonia & Minnerath, Clare & Hagen, Guy & Ventura, Jonathan. (2021). Self-Supervised Poisson-Gaussian Denoising. 2130-2138. 10.1109/WACV48630.2021.00218. 
 
-<a id="1">[1]</a> 
-Khademi, Wesley & Rao, Sonia & Minnerath, Clare & Hagen, Guy & Ventura, Jonathan. (2021). Self-Supervised Poisson-Gaussian Denoising. 2130-2138. 10.1109/WACV48630.2021.00218.
+<a id="1">[2]</a> 
+Zheng, Yue. “X-Ray Image Processing and Visualization for Remote Assistance of Airport Luggage Screeners.” (2004).
