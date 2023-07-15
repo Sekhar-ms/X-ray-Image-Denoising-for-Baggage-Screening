@@ -32,13 +32,14 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 - Code for mirror padding and splitting is given in ```padding_splitting.ipynb```
 - Code for merging the denoised images and cropping the mirror padded part is given in ```merge_crop.ipynb```
 
-  # Evaluation metric
-  
+# Evaluation metric
+- To evaluate the quality of the denoised images, we used the BRISQUE score as our metric.
+- For this, we used MATLAB's inbuilt function brisque in the Image processing toolbox.
 
 # Image fusion and pseudo coloring
 - Applied two fusion algorithms. One is image fusion using Image spatial Information and the other one is Wavelet-based fusion.
 - Fusion using image spatial information and pseudo coloring is in ```coloring.ipynb```
-- And wavelet based fusion code is in ```wavelet.ipynb```
+- And wavelet-based fusion code is in ```wavelet.ipynb```
 
 ## References
 <a id="1">[1]</a> 
@@ -46,3 +47,6 @@ Khademi, Wesley & Rao, Sonia & Minnerath, Clare & Hagen, Guy & Ventura, Jonathan
 
 <a id="1">[2]</a> 
 Zheng, Yue. “X-Ray Image Processing and Visualization for Remote Assistance of Airport Luggage Screeners.” (2004).
+
+<a id="1">[3]</a> 
+A. Mittal, A. K. Moorthy and A. C. Bovik, "No-Reference Image Quality Assessment in the Spatial Domain," in IEEE Transactions on Image Processing, vol. 21, no. 12, pp. 4695-4708, Dec. 2012, doi: 10.1109/TIP.2012.2214050.
