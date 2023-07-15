@@ -26,12 +26,14 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
 # About dataset and data pre-processing
 - Create 20 folders with names 1 to 20. According to this code, 1 to 19 folders are used in training, and 20th folders are used for testing.
-- During training and testing network takes only images of size 512 x 512.
-- If your images are not of that shape you need to mirror pad your images. For our experiment, we mirror-padded our images to 1024 x 1024 and split each image into four 512 x 512 images.
+- During training and testing, the network takes only images of size 512 x 512.
+- If your images are not of that shape, you need to mirror pad your images. For our experiment, we mirror-padded our images to 1024 x 1024 and split each image into four 512 x 512 images.
 - After denoising those splits you can merge those splits and crop out the mirror padded part.
 - Code for mirror padding and splitting is given in ```padding_splitting.ipynb```
 - Code for merging the denoised images and cropping the mirror padded part is given in ```merge_crop.ipynb```
 
+# Image fusion
+For fusing high and low energy images code is given in ```
 
 ## References
 <a id="1">[1]</a> 
