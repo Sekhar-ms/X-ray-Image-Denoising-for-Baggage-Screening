@@ -32,8 +32,10 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 - Code for mirror padding and splitting is given in ```padding_splitting.ipynb```
 - Code for merging the denoised images and cropping the mirror padded part is given in ```merge_crop.ipynb```
 
-# Image fusion
-For fusing high and low energy images code is given in ```
+# Image fusion and pseudo coloring
+- Applied two fusion algorithms. One is image fusion using Image spatial Information and the other one is Wavelet-based fusion.
+- Fusion using image spatial information and pseudo coloring is in ```coloring.ipynb``
+- And wavelet based fusion code is in ```wavelet.ipynb```
 
 ## References
 <a id="1">[1]</a> 
