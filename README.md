@@ -34,7 +34,7 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
 # Evaluation metric
 - To evaluate the quality of the denoised images, we used the BRISQUE score as our metric.
-- For this, we used MATLAB's inbuilt function brisque in the Image processing toolbox.
+- For this, we used MATLAB's inbuilt function ```brisque``` in the Image processing toolbox.
 
 # Image fusion and pseudo coloring
 - Applied two fusion algorithms. One is image fusion using Image spatial Information and the other one is Wavelet-based fusion.
