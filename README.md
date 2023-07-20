@@ -18,16 +18,21 @@ The environment used to run this code is mentioned in ```environment.yml```
 - opencv-python=4.6.0.66   
 - tqdm=4.64.1
 - MATLAB with Image Processing toolbox
-- Windows Operating Syastem
+- Windows Operating System
 
 # Training 
 python train_fmd.py --path ./dataset --dataset non_fmd --mode uncalib
 # Testing
 python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
+## Note
+- If you need to do only testing, we have provided pre-trained model, which was trained on 16-bit security x-ray images of shape 512 x 512.
+- Run this line python test1.py --path ./dataset --dataset non_fmd --mode uncalib in your command prompt.
+
+
 # About dataset and data pre-processing
 - Create 20 folders with names 1 to 20. According to this code, 1 to 19 folders are used in training, and 20th folders are used for testing.
-- During training and testing, the network takes only images of size 512 x 512.
+- During training and testing, the network takes only images of shape 512 x 512.
 - If your images are not of that shape, you need to mirror pad your images. For our experiment, we mirror-padded our images to 1024 x 1024 and split each image into four 512 x 512 images.
 - After denoising those splits you can merge those splits and crop out the mirror padded part.
 - Code for mirror padding and splitting is given in ```padding_splitting.ipynb```
