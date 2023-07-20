@@ -39,7 +39,7 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
 # Image fusion and pseudo coloring
 - Applied two fusion algorithms. One is image fusion using Image spatial Information and the other one is Wavelet-based fusion.
-- Fusion using image spatial information and pseudo coloring is in ```coloring.ipynb```
+- Image fusion using image spatial information and pseudo coloring is in ```coloring.ipynb```
 - And wavelet-based fusion code is in ```wavelet.ipynb```
 
 ## References
