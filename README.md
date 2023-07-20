@@ -18,6 +18,7 @@ The environment used to run this code is mentioned in ```environment.yml```
 - opencv-python=4.6.0.66   
 - tqdm=4.64.1
 - MATLAB with Image Processing toolbox
+- Windows Operating Syastem
 
 # Training 
 python train_fmd.py --path ./dataset --dataset non_fmd --mode uncalib
