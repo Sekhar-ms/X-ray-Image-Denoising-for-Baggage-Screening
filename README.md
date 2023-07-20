@@ -27,7 +27,7 @@ python test1.py --path ./dataset --dataset non_fmd --mode uncalib
 
 ## Note
 - If you need to do only testing, we have provided pre-trained model, which was trained on 16-bit security x-ray images of shape 512 x 512.
-- Run this line: ```python test1.py --path ./dataset --dataset non_fmd --mode``` uncalib in your command prompt.
+- Run this line: ```python test1.py --path ./dataset --dataset non_fmd --mode uncalib``` in your command prompt.
 
 
 # About dataset and data pre-processing
